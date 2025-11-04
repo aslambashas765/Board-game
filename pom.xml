@@ -5,7 +5,7 @@ export JAVA_HOME=/usr/lib/jvm/java-1.8.0-amazon-corretto.x86_64
 export PATH=$JAVA_HOME/bin:$PATH
 export MAVEN_HOME=/usr/share/maven
 
-
+LKML.m
 rajsmml;;
 
 /usr/lib/jvm/java-1.8.0-amazon-corretto.x86_64/jre/bin/java
@@ -95,6 +95,7 @@ JENKINS:
    12  sudo systemctl status jenkins
    12  
 cat /var/lib/jenkins/secrets/initialAdminPassword
+
 
 
 
