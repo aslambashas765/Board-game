@@ -1,140 +1,97 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+sudo update-alternatives --config java
+vi /etc/profile
 
-    <modelVersion>4.0.0</modelVersion>
-
-    <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.5.6</version>
-        <relativePath/>
-    </parent>
-
-    <groupId>com.javaproject</groupId>
-    <artifactId>database_service_project</artifactId>
-    <version>0.0.7-SNAPSHOT</version>
-    <name>database_service_project</name>
-    <description>Project for Spring Boot</description>
-    <packaging>jar</packaging>
-
-    <properties>
-        <java.version>17</java.version>
-        <jacoco.version>0.8.7</jacoco.version>
-        <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
-        <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
-        <sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
-        <sonar.language>java</sonar.language>
-    </properties>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.thymeleaf.extras</groupId>
-            <artifactId>thymeleaf-extras-springsecurity5</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jdbc</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-thymeleaf</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-            <scope>runtime</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.security</groupId>
-            <artifactId>spring-security-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
-
-    <build>
-        <plugins>
-            <!-- Spring Boot Plugin -->
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <excludes>
-                        <exclude>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                        </exclude>
-                    </excludes>
-                </configuration>
-            </plugin>
-
-            <!-- JaCoCo Plugin -->
-            <plugin>
-                <groupId>org.jacoco</groupId>
-                <artifactId>jacoco-maven-plugin</artifactId>
-                <version>${jacoco.version}</version>
-                <executions>
-                    <execution>
-                        <id>jacoco-initialize</id>
-                        <goals>
-                            <goal>prepare-agent</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>jacoco-site</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>report</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-
-            <!-- Corrected Compiler Plugin for Java 17 -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.11.0</version>
-                <configuration>
-                    <release>17</release>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
-
-<distributionManagement>
-    <repository>
-        <id>maven-releases</id>
-        <url>http://3.145.202.192:8081/repository/maven-releases/</url>
-    </repository>
-    <snapshotRepository>
-        <id>maven-snapshots</id>
-        <url>http://3.145.202.192:8081/repository/maven-snapshots/</url>
-    </snapshotRepository>
-</distributionManagement>
+export JAVA_HOME=/usr/lib/jvm/java-1.8.0-amazon-corretto.x86_64
+export PATH=$JAVA_HOME/bin:$PATH
+export MAVEN_HOME=/usr/share/maven
 
 
-</project>
+/usr/lib/jvm/java-1.8.0-amazon-corretto.x86_64/jre/bin/java
+
+
+cat /var/lib/jenkins/secrets/initialAdminPassword
+
+ 1  sudo so
+    2  sudo su
+    3  whoami
+    4  yum install jdk1.8
+    5  sudo su
+    6  history
+    7  sudo su
+    8  mvn archetype:generate
+
+
+
+
+maven commands:
+
+
+1  yum install
+    2  yum install java-1.8.0-openjdk
+    3  java -version
+    4  sudo update alternatives -config java
+    5  update alternatives -config java
+    6  sudo update-alternatives --config java
+    7  yum install maven-y
+    8  yum install maven
+    9  mvn -version
+   10  sudo update-alternatives --config java
+   11  yum install git
+   12  vi /etc/profile
+   13  source /etc/profile
+   14  git clone https://github.com/Aakanshi-garg/Board-game.git
+   15  history
+
+
+1  yum install
+    2  yum install java-1.8.0-openjdk
+    3  java -version
+    4  sudo update alternatives -config java
+    5  update alternatives -config java
+    6  sudo update-alternatives --config java
+    7  yum install maven-y
+    8  yum install maven
+    9  mvn -version
+   10  sudo update-alternatives --config java
+   11  yum install git
+   12  vi /etc/profile
+   13  source /etc/profile
+   14  git clone https://github.com/Aakanshi-garg/Board-game.git
+   15  history
+   16  ls
+   17  cd Board-game
+   18  ls
+   19  mvn clean
+   20  ls
+   21  cd Board-game
+   22  mvn clean
+   23  mvn compile
+   24  mvn test
+   25  mvn package
+   26  ls
+   27  cd target
+   28  ls
+   29  cd..
+   30  history
+
+
+
+
+JENKINS:
+
+1  sudo su
+    2  sudo yum update –y
+    3  sudo yum update 
+    4  sudo wget -O /etc/yum.repos.d/jenkins.repo     https://pkg.jenkins.io/redhat-stable/jenkins.repo
+    5  sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+    6  sudo yum upgrade
+    7  sudo yum install java-21-amazon-corretto -y
+    8  sudo update-alternatives --config java
+    9  sudo yum install jenkins -y
+   10  sudo systemctl enable jenkins
+   11  sudo systemctl start jenkins
+   12  sudo systemctl status jenkins
+   12  
+cat /var/lib/jenkins/secrets/initialAdminPassword
+
+
